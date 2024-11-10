@@ -58,7 +58,7 @@ _*🎶 Enviando música...*_`.trim();
     }
 };
 
-handler.help = ['play'] 
+handler.help = ['spotify'] 
 handler.tags = ['downloader']
-handler.command = ['play'];
+handler.command = ['spotify'];
 export default handler;
