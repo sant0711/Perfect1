@@ -11,7 +11,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let mime = (q.msg || q).mimetype || q.mediaType || ''
     if (/webp|image|video/g.test(mime)) {
       let img = await q.download?.()
-      if (!img) return m.reply(`🍭 Responda a una *Imagen* o *Vídeo.*`)
+      if (!img) return m.reply(`🗑 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆 𝒂 𝒖𝒏𝒂 📷 𝑰𝒎𝒂𝒈𝒆𝒏 𝒐 📹 𝑽í𝒅𝒆𝒐.\n 𝙎𝘼𝙉𝙏 𝘽�𝙏 𝒄�𝒐𝒎𝒑𝒂𝒏𝒚....`)
       let out
       try {
         stiker = await sticker(img, false, global.packname, global.author)
@@ -35,7 +35,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!stiker) stiker = e
   } finally {
     if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
-    else return m.reply('🍭 Responda a una *Imagen* o *Vídeo.*')
+    else return m.reply('🗑 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆 𝒂 𝒖𝒏𝒂 📷 𝑰𝒎𝒂𝒈𝒆𝒏 𝒐 📹 𝑽í𝒅𝒆𝒐. \n 𝙎𝘼𝙉𝙏 𝘽�𝙏 𝒄�𝒐𝒎𝒑𝒂𝒏𝒚....')
   }
 }
 handler.help = ['sticker']

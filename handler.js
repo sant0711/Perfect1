@@ -414,16 +414,16 @@ export async function handler(chatUpdate) {
 
 global.dfail = (type, m, conn, usedPrefix) => {
     let msg = {
-        rowner: `💫 Hola, este comando solo puede ser utilizado por el *Creador* del Bot.`,
-        owner: `💮 Hola, este comando solo puede ser utilizado por el *Creador* del Bot y *Sub Bots*.`,
-        mods: `👑 Hola, este comando solo puede ser utilizado por los *Moderadores* de la Bot.`,
-        premium: `🖤 Hola, este comando solo puede ser utilizado por Usuarios *Premium*.`,
-        group: `🫰🏻 Hola, este comando solo puede ser utilizado en *Grupos*.`,
-        private: `🔓 Hola, este comando solo puede ser utilizado en mi Chat *Privado*.`,
-        admin: `⚡ Hola, este comando solo puede ser utilizado por los *Administradores* del Grupo.`,
-        botAdmin: `👑 Hola, el bot debe ser *Administrador* para ejecutar este Comando.`,
-        unreg: `🤯 Hola, para usar este comando debes estar *Registrado.*\n\nUtiliza: */reg nombre.edad*\n\n> Ejemplo: /reg Santi.24`,
-        restrict: `👻 Hola, esta característica está *deshabilitada.*`  
+        rowner: `💫 𝑯𝒐𝒍𝒂, 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒆𝒍 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝑩𝒐𝒕.`,
+        owner: `💮 𝑯𝒐𝒍𝒂, 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒆𝒍 𝑪𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝑩𝒐𝒕 𝒚 𝑺𝒖𝒃 𝑩𝒐𝒕𝒔.`,
+        mods: `👑 𝑯𝒐𝒍𝒂, 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒍𝒐𝒔 𝑴𝒐𝒅𝒆𝒓𝒂𝒅𝒐𝒓𝒆𝒔 𝒅𝒆 𝒍𝒂 𝑩𝒐𝒕.`,
+        premium: `🖤 𝑯𝒐𝒍𝒂, 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝑼𝒔𝒖𝒂𝒓𝒊𝒐𝒔 𝑷𝒓𝒆𝒎𝒊𝒖𝒎.`,
+        group: `🫰🏻 𝑯𝒐𝒍𝒂, 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒆𝒏 𝑮𝒓𝒖𝒑𝒐𝒔.`,
+        private: `🔓 𝑯𝒐𝒍𝒂, 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒆𝒏 𝒎𝒊 𝑪𝒉𝒂𝒕 𝑷𝒓𝒊𝒗𝒂𝒅𝒐.`,
+        admin: `⚡ 𝑯𝒐𝒍𝒂, 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒔𝒐𝒍𝒐 𝒑𝒖𝒆𝒅𝒆 𝒔𝒆𝒓 𝒖𝒕𝒊𝒍𝒊𝒛𝒂𝒅𝒐 𝒑𝒐𝒓 𝒍𝒐𝒔 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓𝒆𝒔 𝒅𝒆𝒍 𝑮𝒓𝒖𝒑𝒐.`,
+        botAdmin: `👑 𝑯𝒐𝒍𝒂, 𝒆𝒍 𝒃𝒐𝒕 𝒅𝒆𝒃𝒆 𝒔𝒆𝒓 𝑨𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒅𝒐𝒓 𝒑𝒂𝒓𝒂 𝒆𝒋𝒆𝒄𝒖𝒕𝒂𝒓 𝒆𝒔𝒕𝒆 𝑪𝒐𝒎𝒂𝒏𝒅𝒐.`,
+        unreg: `🤖 𝑯𝒐𝒍𝒂, 𝒑𝒂𝒓𝒂 𝒖𝒔𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒅𝒆𝒃𝒆𝒔 𝒆𝒔𝒕𝒂𝒓 𝑹𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒅𝒐.*\n\n𝑼𝒕𝒊𝒍𝒊𝒛𝒂: */reg nombre.edad*\n\n> Ejemplo: /reg Sant bot.17`,
+        restrict: `👻 𝑯𝒐𝒍𝒂, 𝒆𝒔𝒕𝒂 𝒄𝒂𝒓𝒂𝒄𝒕𝒆𝒓í𝒔𝒕𝒊𝒄𝒂 𝒆𝒔𝒕á 𝒅𝒆𝒔𝒉𝒂𝒃𝒊𝒍𝒊𝒕𝒂𝒅𝒂.`  
     }[type]
     if (msg) return conn.reply(m.chat, msg, m, rcanal).then(_ => m.react('✖️'))
 }

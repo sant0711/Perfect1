@@ -13,7 +13,7 @@ export async function before(m, {conn, participants, groupMetadata}) {
       let welcome = chat.sWelcome.replace('@user', () => user);
       await conn.sendAi(m.chat, botname, textbot, welcome, img, img, canal)
     } else {
-      let bienvenida = `┌─★ ���� ��� - �� \n│「 Bienvenido 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  Bienvenido a\n   │✑  ${groupMetadata.subject}\n   └───────────────┈ ⳹`
+      let bienvenida = `× 𝙎𝘼𝙉𝙏 𝘽𝙊𝙏 × \n ×× 𝑩𝑰𝑬𝑵𝑽𝑬𝑵𝑰𝑫@ ×× \n    ×  @${m.messageStubParameters[0].split`@`[0]} × \n   ¦ ×  𝑩𝑰𝑬𝑵𝑽𝑬𝑵𝑰𝑫@ 𝑨\n   ¦ ×  ${groupMetadata.subject}\n   ¦ ×  Descripción:\n${groupMetadata.desc || 'sin descripción'}\n > 𝙎𝘼𝙉𝙏 𝘽𝙊𝙏 𝒄𝒐𝒎𝒑𝒂𝒏𝒚...`
       await conn.sendAi(m.chat, botname, textbot, bienvenida, img, img, canal)
     }
   }
@@ -24,7 +24,7 @@ export async function before(m, {conn, participants, groupMetadata}) {
       let bye = chat.sBye.replace('@user', () => user);
       await conn.sendAi(m.chat, botname, textbot, bye, img, img, canal)
     } else {
-      let bye = `┌─★ ���� ��� - �� \n│「 ADIOS 👋 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  Se fue\n   │✑ Jamás te quisimos aquí\n   └───────────────┈ ⳹`
+      let bye = `× 𝙎𝘼𝙉𝙏 𝘽𝙊𝙏 \n ×× ADIOS 👋 ×× \n    ×  @${m.messageStubParameters[0].split`@`[0]} × \n   ¦ ×   𝑺𝒆 𝒇𝒖𝒆\n   ¦ ×  𝑴𝒆𝒏𝒐𝒔 𝒖𝒏 𝒎𝒐𝒄𝒉𝒐. 𝑴𝒐𝒄𝒉𝒐𝒔 𝒓𝒆𝒔𝒕𝒂𝒏𝒕𝒆𝒔 ${participants.length}\n > 𝙎𝘼𝙉𝙏 𝘽𝙊𝙏 𝒄𝒐𝒎𝒑𝒂𝒏𝒚...`
       await conn.sendAi(m.chat, botname, textbot, bye, img, img, canal)
     }
   }
@@ -35,7 +35,7 @@ export async function before(m, {conn, participants, groupMetadata}) {
       let bye = chat.sBye.replace('@user', () => user);
       await conn.sendAi(m.chat, botname, textbot, bye, img, img, canal)
     } else {
-      let kick = `┌─★ ���� ��� - �� \n│「 ADIOS 👋 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  Se fue\n   │✑ Jamás te quisimos aquí\n   └───────────────┈ ⳹`
+      let kick = `× 𝙎𝘼𝙉𝙏 𝘽𝙊𝙏 \n ×× 𝑨𝑫𝑰𝑶𝑺 👋 ×× \n    ×  @${m.messageStubParameters[0].split`@`[0]} × \n   ¦ ×   𝑺𝒆 𝒇𝒖𝒆\n   ¦ ×  𝑴𝒆𝒏𝒐𝒔 𝒖𝒏 𝒎𝒐𝒄𝒉𝒐. 𝑴𝒐𝒄𝒉𝒐𝒔 𝒓𝒆𝒔𝒕𝒂𝒏𝒕𝒆𝒔 ${participants.length}\n > 𝙎𝘼𝙉𝙏 𝘽𝙊𝙏 𝒄𝒐𝒎𝒑𝒂𝒏𝒚...`
       await conn.sendAi(m.chat, botname, textbot, kick, img, img, canal)
     }
 }}
