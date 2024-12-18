@@ -16,7 +16,7 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
   }
   teks += `└───────⭓
 
- > 𝙎𝘼𝙉𝙏 𝘽𝙊𝙏 𝒄𝒐𝒎𝒑𝒂𝒏𝒚...`;
+> 𝙎𝘼𝙉𝙏 𝘽𝙊𝙏 𝒄𝒐𝒎𝒑𝒂𝒏𝒚...`;
   conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
 };
 handler.help = ['todos'];
