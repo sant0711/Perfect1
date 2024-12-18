@@ -24,10 +24,10 @@ global.prems = []
    
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.packname = `𝙎𝘼𝙉𝙏 𝘽𝙊𝙏  ᡣ𐭩`
-global.author = '{\n "bot": {\n   "name": "𝙎𝘼𝙉𝙏 𝘽𝙊𝙏  ᡣ𐭩",\n     "author": "Anuar",\n   "status_bot": "active"\n }\n}'
-global.wait = '𝙎𝘼𝙉𝙏 𝘽𝙊𝙏  ᡣ𐭩'
-global.botname = '𝙎𝘼𝙉𝙏 𝘽𝙊𝙏  ᡣ𐭩'
+global.packname = `𝙎𝘼𝙉𝙏 𝘽𝙊𝙏 `
+global.author = '{\n "bot": {\n   "name": "𝙎𝘼𝙉𝙏 𝘽𝙊𝙏 ",\n     "author": "Anuar",\n   "status_bot": "active"\n }\n}'
+global.wait = '𝙎𝘼𝙉𝙏 𝘽𝙊𝙏'
+global.botname = '𝙎𝘼𝙉𝙏 𝘽𝙊𝙏'
 global.textbot = `Powered By Sant`
 global.listo = 'Completado ✯'
 global.namechannel = '𝙎𝘼𝙉𝙏 𝘽𝙊𝙏'
@@ -40,7 +40,7 @@ global.miniurl = fs.readFileSync('./storage/img/siskedurl.jpg')
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.group = 'https://chat.whatsapp.com/L481VM9rJ2JJj5y3atndy8'
-global.canal = 'https://whatsapp.com/channel/0029Vak6H9l3GJP4FJH5063R'
+global.canal = 'canalwpp'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
