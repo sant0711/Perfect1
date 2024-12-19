@@ -1,6 +1,7 @@
-let handler = async (m, { conn, text, command }) => {
-let id = text ? text : m.chat  
-let pp = 'https://telegra.ph/file/5ab1ca8bf65c1ddb36c20.mp4'
+import { promises } from 'fs'
+import { join } from 'path'
+import fetch from 'node-fetch'
+import { xpRange } from '../lib/levelling.js'
 
 let tags = {
   'main': 'Info 📚',
