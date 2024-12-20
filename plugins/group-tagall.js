@@ -10,7 +10,7 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
   }
   const pesan = args.join` `;
   const oi = `${pesan}`;
-  let teks = `${groupMetadata.subject}\n\n *Integrantes :  ${participants.length} Malos* ${oi}\n\n❏ ACTIVENCE!! \n`;
+  let teks = ` ${groupMetadata.subject} \n\n *Integrantes :  ${participants.length} Malos* ${oi}\n\n❏ ACTIVENCE!! \n`;
   for (const mem of participants) {
     teks += `$👑 × @${mem.id.split('@')[0]}\n`;
   }
